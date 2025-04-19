@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Agdasima", serif;
+    background-color: aliceblue;
+    color: #1F3D3D;
+    
+    box-sizing: border-box;
+    display: flex;
+    
+    
+}
+
+.container1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+
+.presentacion { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+    gap: 10px;
+}
+
+.logo {
+    width: 221px;
+    height: 76px;
+}
+
+
+.titulo_uno {
+       
+        height: 100%;
+        font-size: 4rem;
+        margin: 0 0 0 0;
+        letter-spacing: 1px;
+        opacity: 90%;
+        font-weight: normal;
+}
+
+.titulo_dos {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+}
+
+
+.formulario {
+        gap: 5px;
+        width: 90%;
+        
+}
+
+.emailcontraseña {
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    padding: 10px 0 0 0;
+    text-align: left;
+    display: grid;
+    gap: 5px;
+    margin-left: 10%;
+}
+
+.recuperar_contraseña {
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 25px 0 0 0;
+    text-decoration: underline;
+}
+
+.cajasdetexto {
+    width: 70%;
+    height: 35px;
+    
+}
+
+
+.submit {
+    font-size: 1.125rem;
+    background-color: #003904c4;
+    color: #fff;
+    text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 0;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: unset;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+    margin: 15px 0 0 0;
+}
+
+
+.submit:hover {
+    box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
+    background-color: #003904;
+}
+
+
+.container2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.imagen_portada {
+    width: 100%; 
+    height: 100%;
+
+    }
+
+    
+@media (max-width: 800px){
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container2 {
+        justify-content: center;
+      }
+    
+
+}
+@media (max-width: 486px){
+    .formulario {
+        width: 100%;   
+    }
+    .titulo_uno { 
+        font-size: 3rem;
+    }
+    .titulo_uno, .titulo_dos {
+        letter-spacing: 0px;
+    }
+}
